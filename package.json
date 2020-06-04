@@ -1,0 +1,18 @@
+{
+  "name": "@netlifedesign/how-much-is-x-co2",
+  "version": "0.1.0",
+  "description": "A collection of methods to describe and compare X kilograms of CO2",
+  "license": "MIT",
+  "repository": "netliferesearch/how-much-is-x-co2",
+  "main": "index.js",
+  "keywords": [
+    "co2",
+    "carbon",
+    "footprint",
+    "emissions",
+    "sustainability",
+    "visualisation",
+    "vizualisation",
+    "statistics"
+  ]
+}
