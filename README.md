@@ -17,4 +17,7 @@ All methods take a kgCO2 value and return a corresponding unit described in the 
 * CO2ToKmTraveledByCarAlone(kgCO2)
 * CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy(kgCO2)
 * CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy(kgCO2)
-* CO2ToKgProducedDairy(kgCO2)
+* CO2ToKgProducedMilk(kgCO2)
+* CO2ToHectaresRainforest(kgCO2)
+* CO2ToSquareMetersRainforest(kgCO2)
+* CO2ToJeans(kgCO2)
