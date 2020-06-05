@@ -63,6 +63,8 @@ function CO2ToSquareMetersRainforest(kgCO2) {
   return CO2ToHectaresRainforest(kgCO2) * 10000;
 }
 
+// Source: https://www.worldbank.org/en/news/feature/2019/09/23/costo-moda-medio-ambiente
+// Using numbers from: United Nations Environment Programme (UNEP)
 function CO2ToJeans(kgCO2) {
   const kgCO2PerJeans = 33.4;
   return kgCO2 / kgCO2PerJeans;
