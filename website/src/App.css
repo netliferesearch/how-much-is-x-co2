@@ -1,0 +1,23 @@
+.App {
+  background-color: #29CB7E;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+li {
+  margin: 0.4em;
+}
