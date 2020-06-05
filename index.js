@@ -24,10 +24,32 @@ function CO2ToKmTraveledByCarAlone(kgCO2) {
   return (100/10.4) * kgCO2;
 }
 
+// Source: FAO.org: Greenhouse gas emissions from ruminant supply chains
+// http://www.fao.org/3/i3461e/i3461e03.pdf
+// Numbers from source: Global Livestock Environmental Assessment Model (GLEAM)
+
+function CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy(kgCO2) {
+  const CO2PerKgBeef = 67.8;
+  return kgCO2 / CO2PerKgBeef;
+}
+
+function CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy(kgCO2) {
+  const CO2PerKgBeef =  18.4;
+  return kgCO2 / CO2PerKgBeef;
+}
+
+function CO2ToKgProducedDairy(kgCO2) {
+  const CO2PerKgBeef =  18.4;
+  return kgCO2 / CO2PerKgBeef;
+}
+
 module.exports = {
   CO2ToKmTraveledByCoach,
   CO2ToKmTraveledByScooter,
   CO2ToKmTraveledByPlanePerPassenger,
   CO2ToKmTraveledByTrainPerPassenger,
-  CO2ToKmTraveledByCarAlone
+  CO2ToKmTraveledByCarAlone,
+  CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy,
+  CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy,
+  CO2ToKgProducedDairy
 }
