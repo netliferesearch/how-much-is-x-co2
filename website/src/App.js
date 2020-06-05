@@ -15,7 +15,10 @@ import {
 
 function App() {
 
-  const kg = window.location.pathname.slice(1) || 1;
+  const urlParams = new URLSearchParams(window.location.search);
+  const kg = urlParams.get('kg') || 1;
+
+  // const kg = window.location.pathname.slice(1) || 1;
 
   const decimals = 2;
 
