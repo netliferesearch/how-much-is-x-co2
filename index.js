@@ -63,6 +63,14 @@ function CO2ToSquareMetersRainforest(kgCO2) {
   return CO2ToHectaresRainforest(kgCO2) * 10000;
 }
 
+// Source: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1366-9516.2004.00089.x#:~:text=Density%20ranged%20between%20344%20and,479%20trees%20ha%E2%88%921).
+function CO2ToRainforestTrees(kgCO2) {
+  const CO2PerHectare = CO2ToHectaresRainforest(kgCO2);
+  const averageTreesPerHectare = 4790;
+  return CO2PerHectare * 4790;
+}
+
+
 // Source: https://www.worldbank.org/en/news/feature/2019/09/23/costo-moda-medio-ambiente
 // Using numbers from: United Nations Environment Programme (UNEP)
 function CO2ToJeans(kgCO2) {
@@ -81,5 +89,6 @@ module.exports = {
   CO2ToLitresProducedMilk,
   CO2ToHectaresRainforest,
   CO2ToSquareMetersRainforest,
+  CO2ToRainforestTrees,
   CO2ToJeans
 }
