@@ -33,7 +33,7 @@ function App() {
         <li>Emissions from producing <strong>{ CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy(kg).toFixed(decimals) }kg</strong> beef (from cattle producing both beef and dairy)</li>
         <li>Emissions from producing <strong>{ CO2ToLitresProducedMilk(kg).toFixed(1) } litres</strong> of milk</li>
         <li>Carbon stored in <strong>{ CO2ToRainforestTrees(kg).toFixed(2) } trees</strong> in a tropical rainforest</li>
-        <li>Emissions to make <strong>{ CO2ToJeans(kg).toFixed(2) } pairs of jeans</strong></li>
+        <li>Emissions from making <strong>{ CO2ToJeans(kg).toFixed(2) } pairs of jeans</strong></li>
       </ul>
     </div>
   );
