@@ -34,13 +34,14 @@ function CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy(kgCO2) {
 }
 
 function CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy(kgCO2) {
-  const CO2PerKgBeef =  18.4;
+  const CO2PerKgBeef = 18.4;
   return kgCO2 / CO2PerKgBeef;
 }
 
-function CO2ToKgProducedDairy(kgCO2) {
-  const CO2PerKgBeef =  18.4;
-  return kgCO2 / CO2PerKgBeef;
+function CO2ToKgProducedMilk(kgCO2) {
+  const CO2PerKgMilk = 2.8;
+  return kgCO2 / CO2PerKgMilk;
+}
 }
 
 module.exports = {
@@ -51,5 +52,5 @@ module.exports = {
   CO2ToKmTraveledByCarAlone,
   CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy,
   CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy,
-  CO2ToKgProducedDairy
+  CO2ToKgProducedMilk,
 }
