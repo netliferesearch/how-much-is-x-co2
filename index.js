@@ -56,6 +56,11 @@ function CO2ToSquareMetersRainforest(kgCO2) {
   return CO2ToHectaresRainforest(kgCO2) * 10000;
 }
 
+function CO2ToJeans(kgCO2) {
+  const kgCO2PerJeans = 33.4;
+  return kgCO2 / kgCO2PerJeans;
+}
+
 module.exports = {
   CO2ToKmTraveledByCoach,
   CO2ToKmTraveledByScooter,
@@ -67,4 +72,5 @@ module.exports = {
   CO2ToKgProducedMilk,
   CO2ToHectaresRainforest,
   CO2ToSquareMetersRainforest,
+  CO2ToJeans
 }
