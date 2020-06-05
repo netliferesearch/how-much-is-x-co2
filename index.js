@@ -43,6 +43,13 @@ function CO2ToKgProducedMilk(kgCO2) {
   return kgCO2 / CO2PerKgMilk;
 }
 
+function CO2ToLitresProducedMilk(kgCO2) {
+  const CO2PerKgMilk = 2.8;
+  const litresPerKgMilk = 0.970873786407767;
+
+  return (kgCO2 / CO2PerKgMilk) * litresPerKgMilk;
+}
+
 // Source: Acre for acre, urban trees can store as much carbon as tropical forest
 // https://anthropocenemagazine.org/2018/07/acre-for-acre-urban-trees-can-store-as-much-carbon-as-tropical-forest/
 // Source: Wilkes P. et al. “Estimating urban above ground biomass with multi-scale LiDAR.” Carbon Balance and Management. 2018.
@@ -69,7 +76,7 @@ module.exports = {
   CO2ToKmTraveledByCarAlone,
   CO2ToKgProducedBeefFromCattleProducingBeefButNotDairy,
   CO2ToKgProducedBeefFromCattleProducingBothBeefAndDairy,
-  CO2ToKgProducedMilk,
+  CO2ToLitresProducedMilk,
   CO2ToHectaresRainforest,
   CO2ToSquareMetersRainforest,
   CO2ToJeans
