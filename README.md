@@ -1,5 +1,7 @@
 # how-much-is-x-co2
-A collection of methods to describe and compare x kilograms of CO2
+A collection of methods to describe and compare x kilograms of CO2.
+See how much 100kg CO2 is here here: https://how-much-is-x-co2.netlify.app/?kg=100
+Change the Kg parameter in the URL to see different calculations.
 
 ## Usage
 
